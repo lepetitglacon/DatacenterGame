@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css">
+<!-- jQuery and JS bundle w/ Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</head>
+<body class="container-fluid" style="height: 100vh;">
+    <div style="height: 100vh;">
+        <div class="raw" id="top">
+            <div id="boxFps"></div>
+        </div>
+        <div class="raw d-flex" id="bottom">
+            <div id="boxReturn" class="col d-flex flex-column">
+                <h1>Code something</h1>
+                <svg id="btnReturn"  width="162" height="224" viewBox="0 0 162 224" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M161 1.08487H1V89.2429H42V223H161V1.08487Z" fill="#5A5A5A" stroke="black"/>
+                    <path d="M158 1.08487H1V84.4124H42V217.427H158V1.08487Z" fill="#343434" stroke="black"/>
+                    <path d="M49.9844 46.2012H44.6406V55.4043H41.625V32.6543H49.1562C51.7188 32.6543 53.6875 33.2377 55.0625 34.4043C56.4479 35.571 57.1406 37.2689 57.1406 39.4981C57.1406 40.9147 56.7552 42.1491 55.9844 43.2012C55.224 44.2533 54.1615 45.0397 52.7969 45.5606L58.1406 55.2168V55.4043H54.9219L49.9844 46.2012ZM44.6406 43.7481H49.25C50.7396 43.7481 51.9219 43.3627 52.7969 42.5918C53.6823 41.821 54.125 40.7897 54.125 39.4981C54.125 38.0918 53.7031 37.0137 52.8594 36.2637C52.026 35.5137 50.8177 35.1335 49.2344 35.1231H44.6406V43.7481ZM67.9219 55.7168C65.6302 55.7168 63.7656 54.9668 62.3281 53.4668C60.8906 51.9564 60.1719 49.9408 60.1719 47.42V46.8887C60.1719 45.2116 60.4896 43.7168 61.125 42.4043C61.7708 41.0814 62.6667 40.0502 63.8125 39.3106C64.9688 38.5606 66.2188 38.1856 67.5625 38.1856C69.7604 38.1856 71.4688 38.9095 72.6875 40.3575C73.9062 41.8054 74.5156 43.8783 74.5156 46.5762V47.7793H63.0625C63.1042 49.446 63.5885 50.795 64.5156 51.8262C65.4531 52.847 66.6406 53.3575 68.0781 53.3575C69.099 53.3575 69.9635 53.1491 70.6719 52.7325C71.3802 52.3158 72 51.7637 72.5312 51.0762L74.2969 52.4512C72.8802 54.6283 70.7552 55.7168 67.9219 55.7168ZM67.5625 40.5606C66.3958 40.5606 65.4167 40.9877 64.625 41.8418C63.8333 42.6856 63.3438 43.8731 63.1562 45.4043H71.625V45.1856C71.5417 43.7168 71.1458 42.5814 70.4375 41.7793C69.7292 40.9668 68.7708 40.5606 67.5625 40.5606ZM81.7969 34.4043V38.4981H84.9531V40.7325H81.7969V51.2168C81.7969 51.8939 81.9375 52.4043 82.2188 52.7481C82.5 53.0814 82.9792 53.2481 83.6562 53.2481C83.9896 53.2481 84.4479 53.1856 85.0312 53.0606V55.4043C84.2708 55.6127 83.5312 55.7168 82.8125 55.7168C81.5208 55.7168 80.5469 55.3262 79.8906 54.545C79.2344 53.7637 78.9062 52.6543 78.9062 51.2168V40.7325H75.8281V38.4981H78.9062V34.4043H81.7969ZM98.7812 53.7325C97.6562 55.0554 96.0052 55.7168 93.8281 55.7168C92.026 55.7168 90.651 55.196 89.7031 54.1543C88.7656 53.1022 88.2917 51.5502 88.2812 49.4981V38.4981H91.1719V49.42C91.1719 51.9825 92.2135 53.2637 94.2969 53.2637C96.5052 53.2637 97.974 52.4408 98.7031 50.795V38.4981H101.594V55.4043H98.8438L98.7812 53.7325ZM114.172 41.0918C113.734 41.0189 113.26 40.9825 112.75 40.9825C110.854 40.9825 109.568 41.7897 108.891 43.4043V55.4043H106V38.4981H108.812L108.859 40.4512C109.807 38.9408 111.151 38.1856 112.891 38.1856C113.453 38.1856 113.88 38.2585 114.172 38.4043V41.0918ZM119.578 38.4981L119.672 40.6231C120.964 38.9981 122.651 38.1856 124.734 38.1856C128.307 38.1856 130.109 40.2012 130.141 44.2325V55.4043H127.25V44.2168C127.24 42.9981 126.958 42.097 126.406 41.5137C125.865 40.9304 125.016 40.6387 123.859 40.6387C122.922 40.6387 122.099 40.8887 121.391 41.3887C120.682 41.8887 120.13 42.545 119.734 43.3575V55.4043H116.844V38.4981H119.578Z" fill="white"/>
+                </svg>
+            </div>
+            <div id="boxGame" class="col d-flex">
+                <div style="background-color: dimgrey;" class="container-fluid">
+                    <div id="boxMoney">
+    
+                    </div>
+                </div>
+            </div>
+            <div id="boxBuy" class="col">
+                <div id="boxBuilding" class="raw">
+                    <h1>Buildings :</h1>
+                    <div class="building mt-3" id="building1">Garage</div>
+                    <div class="building mt-3" id="building2">Grandpa's free electricity</div>
+                    <div class="building mt-3" id="building3">1st apartment</div>
+                </div>
+                <div class="raw d-flex flex-column" id="boxComputer">
+                    <h1>Computers :</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./data.js"></script>
+    <script src="./Computer.js"></script>
+    <script src="./Building.js"></script>
+    <script src="./Game.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
