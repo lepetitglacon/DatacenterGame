@@ -13,6 +13,13 @@ transform: scale(1.1,1.1);
     opacity: 80%;
 }
 
+.item-b{
+    width: 100%;
+    height: 100%;
+    background-color: olive;
+    border-radius: 5px;
+}
+
 .itemPrice{
     color: rgb(87, 35, 35);
 }
@@ -20,4 +27,8 @@ transform: scale(1.1,1.1);
 .affordable{
     transform: scale(1.05,1.05);
     background-color: gold;
+}
+
+canvas {
+    border: 1px solid black; 
 }
