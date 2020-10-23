@@ -18,7 +18,7 @@ class Game{
 
 
     constructor() {
-        this.gameMoney = 150
+        this.gameMoney = 0
         this.gameBoxMoney = document.getElementById("boxMoney")
         this.gameArrayComputers = []
         this.gameArrayBuildings = []
